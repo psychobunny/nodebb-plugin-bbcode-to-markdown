@@ -1,0 +1,10 @@
+{
+	"id": "nodebb-plugin-bbcode-to-markdown",
+	"name": "NodeBB BBCode to Markdown",
+	"description": "Convert NodeBB posts from phpBB to markdown.",
+	"url": "https://github.com/psychobunny/nodebb-plugin-bbcode-to-markdown",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true, "priority": 1 }
+	]
+}
