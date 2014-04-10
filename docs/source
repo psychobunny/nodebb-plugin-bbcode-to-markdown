@@ -1,0 +1,6 @@
+'[b:1pokqsjf][color=#FFBF00:1pokqsjf]HTC[/color:1pokqsjf][/b:1pokqsjf]'.replace(/\[\S?color[\s\S]*?\]/g, '').replace(/\[\S?b:[s\S]*?\]/g, '**')
+'[b:1pokqsjf][color=#FFBF00:1pokqsjf]HTC[/color:1pokqsjf][/b:1pokqsjf]'.replace(/\[\S?b:[s\S]*?\]/g, '**')
+'[url=http://forum.nfcring.com/topic69.html#p308:1pokqsjf]HTC - One (M7)[/url:1pokqsjf]'.replace(/\[url=(https?:[\s\S]*?):[\s\S]*?\]([\s\S]*?)\[\/url:[\s\S]*?\]/g, '![$2]($1)');
+'[url:29bezopb]http://techday.com/reviews/review-galaring-g1-nfc-ring/[/url:29bezopb]'.replace(/\[\S?url:[s\S]*?\]/g, '')
+'The NFC ring is[i:noazjxgj] ideal[/i:noazjxgj] for bitcoin. It was just waiting for the right protocol...'.replace(/\[\S?i:[s\S]*?\]/g, '*')
+'<!-- w --><a class="postlink" href="http://www.opencxp.org">www.opencxp.org</a><!-- w -->'.replace(/<!--[\s\S]*?href="([\s\S]*?)">([\s\S]*?)<[\s\S]*?-->/g, '![$2]($1)');
