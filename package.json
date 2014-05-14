@@ -15,8 +15,7 @@
     "plugin",
     "bbcode",
     "converter",
-    "phpbb",
-    "vBulletin"
+    "phpbb"
   ],
   "author": {
     "name": "psychobunny",
@@ -25,9 +24,5 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/psychobunny/nodebb-plugin-bbcode-to-markdown/issues"
-  },
-  "readme": "",
-  "readmeFilename": "README.md",
-  "_id": "nodebb-plugin-bbcode-to-markdown@0.0.1",
-  "_from": "nodebb-plugin-bbcode-to-markdown@~0.0.1"
+  }
 }
