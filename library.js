@@ -2,6 +2,20 @@
 
 var converter = {};
 
+
+
+function parseQuotes(content) {
+	var quote, quoteBlock;
+
+	while(quote = content.match(/\[quote=([\s\S]*?)\]([\s\S]*)\[\/quote\]/gi)) {
+		quote = quote[0];
+		quoteBlock = quote.replace(/\[quote=([\s\S]*?)\]([\s\S]*)\[\/quote\]/gi, '@$1 said:\n $2').replace(/[\r\n]/g, '\n>');
+		content = content.replace(quote, quoteBlock);
+	}
+
+	return content;
+}
+
 converter.parse = function(postContent, callback) {
 	postContent = postContent
 		.replace('&#58;', ':')
@@ -13,6 +27,7 @@ converter.parse = function(postContent, callback) {
 		.replace(/\[quote:[\s\S]*?\]([\s\S]*?)\[\/quote:[\s\S]*?\]/gi, '> $1')
 		.replace(/<!--[\s\S]*?href="([\s\S]*?)">([\s\S]*?)<[\s\S]*?-->/gi, '[$2]($1)');
 
+	postContent = parseQuotes(postContent);
 	callback(null, postContent);
 };
 
