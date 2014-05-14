@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-bbcode-to-markdown",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "NodeBB BBCode to Markdown Plugin",
   "main": "library.js",
   "scripts": {
